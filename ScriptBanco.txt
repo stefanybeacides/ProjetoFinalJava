@@ -1,0 +1,36 @@
+Criar Esquema:
+CREATE DATABASE `cadastro_correntistas` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+Criar tabelas:
+CREATE TABLE `correntista_basico` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
+  `cep` varchar(8) NOT NULL,
+  `logradouro` varchar(50) NOT NULL,
+  `bairro` varchar(50) NOT NULL,
+  `cidade` varchar(50) NOT NULL,
+  `uf` varchar(2) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `qtdtransacao` int NOT NULL,
+  `anuidade` double NOT NULL,
+  `limitesaque` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `correntista_premium` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
+  `cep` varchar(8) NOT NULL,
+  `logradouro` varchar(100) NOT NULL,
+  `bairro` varchar(50) NOT NULL,
+  `cidade` varchar(50) NOT NULL,
+  `uf` varchar(2) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `qtdtransacao` int NOT NULL,
+  `anuidade` double NOT NULL,
+  `limitecredito` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
