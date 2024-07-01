@@ -132,4 +132,4 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE par
 
 ---
 
-Feito com 💻 e ☕ por [Seu Nome]
+Feito com 💻 e ☕ por Stefany Beacides
